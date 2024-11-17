@@ -45,8 +45,7 @@ function solveQuadratic() {
             let discriminant = f * f - 4 * e * g;
 
             if (discriminant < 0) {
-                document.getElementById('result1').innerText = "No real roots (The Solution would be imaginary numbers).";
-              
+                document.getElementById('result1').innerHTML = 'No real roots (The Solution would be <a href="https://www.mathsisfun.com/numbers/imaginary-numbers.html" target="_blank">Imaginary numbers</a>).';
                 return;
             }
        
