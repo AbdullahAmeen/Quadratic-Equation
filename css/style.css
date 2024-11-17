@@ -1,0 +1,75 @@
+body{
+    background-image: url('../data/backgroundimage.png'); /* Replace with your image URL */
+    background-size: cover;   /* Ensure the image covers the full page */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Parallax effect - the background is fixed when scrolling */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2; /* Ensure content appears on top of the background */
+    color: white; /* Ensure text stands out against the background */
+    padding: 50px 20px; /* Add padding for spacing around the content */
+    text-align: center;
+}
+
+/* Optional: Add a dark overlay to improve text readability */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1; /* Overlay sits between the background and the content */
+}
+
+
+label{
+    color: white;
+}
+
+#a{
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: rgb(246, 253, 253);
+    border-radius: 2px;
+}
+#b{
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: rgb(244, 247, 247);
+    border-radius: 2px;
+}
+#c{
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: rgb(241, 247, 247);
+    border-radius: 2px;
+}
+
+.position{
+    text-align: center;
+}
+
+.solovebutton {
+    width: 80px;
+    height: 32px;
+    background-color: rgb(4, 4, 87);
+    color: white;
+    border: 0.5px solid rgb(223, 223, 211);
+    border-radius: 5px;
+    margin-left: -90px;
+
+}
+
+#result{
+    color: white;
+    font-size: 18px;
+}
+
+input::placeholder {
+    font-size: 13px;
+    text-align: center;
+    color: rgb(136, 131, 131);
+}
