@@ -14,6 +14,7 @@ body{
     color: white; /* Ensure text stands out against the background */
     padding: 50px 20px; /* Add padding for spacing around the content */
     text-align: center;
+    margin-bottom: 50px;
 }
 
 /* Optional: Add a dark overlay to improve text readability */
