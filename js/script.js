@@ -91,3 +91,23 @@ function factorQuadratic() {
     "result1"
   ).innerText = `The factored form is: ${factor1}${factor2}`;
 }
+
+
+document.getElementById('factorButton').onclick = function() {
+  const input = document.getElementById('numberInput').value;
+  const number = parseInt(input);
+
+  if (isNaN(number) || number <= 0) {
+      document.getElementById('result2').innerText = 'Please enter a valid positive number.';
+      return;
+  }
+
+  let factors = [];
+  for (let i = 1; i <= number; i++) {
+      if (number % i === 0) {
+          factors.push(i);
+      }
+  }
+
+  document.getElementById('result2').innerText = 'Factors: ' + factors.join(', ');
+};

@@ -33,21 +33,26 @@ label{
     color: white;
 }
 
-#a{
-    border: 0.5px solid rgb(0, 0, 0);
-    background-color: rgb(246, 253, 253);
-    border-radius: 2px;
-}
-#b{
-    border: 0.5px solid rgb(0, 0, 0);
-    background-color: rgb(244, 247, 247);
-    border-radius: 2px;
-}
-#c{
-    border: 0.5px solid rgb(0, 0, 0);
-    background-color: rgb(241, 247, 247);
-    border-radius: 2px;
-}
+.shining-border {
+    width: auto;
+    padding: 1px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(90deg, red, yellow, rgb(166, 241, 103), rgb(144, 241, 241), red) border-box;
+    animation: shine 3s linear infinite;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
 
 .position{
     text-align: center;
@@ -64,6 +69,16 @@ label{
 
 }
 
+.FactorButton{
+    width: 80px;
+    height: 32px;
+    background-color: rgb(4, 4, 87);
+    color: white;
+    border: 0.5px solid rgb(223, 223, 211);
+    border-radius: 5px;
+    margin-left: -90px;
+}
+
 #result{
     color: white;
     font-size: 18px;
@@ -73,4 +88,12 @@ input::placeholder {
     font-size: 13px;
     text-align: center;
     color: rgb(136, 131, 131);
+}
+
+.Factoring{
+    color: white;
+}
+
+#result2{
+    color: white;
 }
