@@ -33,21 +33,26 @@ label{
     color: white;
 }
 
-#a{
-    border: 0.5px solid rgb(0, 0, 0);
-    background-color: rgb(246, 253, 253);
-    border-radius: 2px;
-}
-#b{
-    border: 0.5px solid rgb(0, 0, 0);
-    background-color: rgb(244, 247, 247);
-    border-radius: 2px;
-}
-#c{
-    border: 0.5px solid rgb(0, 0, 0);
-    background-color: rgb(241, 247, 247);
-    border-radius: 2px;
-}
+.shining-border {
+    width: 200px;
+    padding: 2px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(90deg, red, yellow, green, blue, red) border-box;
+    animation: shine 3s linear infinite;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
 
 .position{
     text-align: center;
@@ -83,4 +88,7 @@ input::placeholder {
     font-size: 13px;
     text-align: center;
     color: rgb(136, 131, 131);
+}
+#result2{
+    color: white;
 }
