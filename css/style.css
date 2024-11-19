@@ -34,25 +34,25 @@ label{
 }
 
 .shining-border {
-    width: 200px;
-    padding: 2px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    background: linear-gradient(white, white) padding-box,
-                linear-gradient(90deg, red, yellow, green, blue, red) border-box;
-    animation: shine 3s linear infinite;
-    outline: none;
-    font-size: 16px;
+  width: 200px;
+  padding: 3px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(90deg, red, yellow, green, blue, red) border-box;
+  animation: shine 3s linear infinite;
+  outline: none;
+  font-size: 16px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @keyframes shine {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
+  100% {
+    background-position: 100% 50%;
   }
+}
 
 .position{
     text-align: center;
@@ -69,15 +69,6 @@ label{
 
 }
 
-.FactorButton{
-    width: 80px;
-    height: 32px;
-    background-color: rgb(4, 4, 87);
-    color: white;
-    border: 0.5px solid rgb(223, 223, 211);
-    border-radius: 5px;
-    margin-left: -90px;
-}
 
 #result{
     color: white;
