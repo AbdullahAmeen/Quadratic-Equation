@@ -109,5 +109,5 @@ document.getElementById('factorButton').onclick = function() {
       }
   }
 
-  document.getElementById('result2').innerText = 'Factors: ' + factors.join(', ');
+  document.getElementById('result2').innerText = 'The factors of ' + input + '  are: ' + '(' + factors.join(', ') +' )';
 };
